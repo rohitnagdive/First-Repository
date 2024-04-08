@@ -1,0 +1,15 @@
+<template>
+    <lightning-card  title="Applicant Registration">
+    <lightning-input  data-formfield="firstName"  type="text" label="Enter First Name" name="firstName"> </lightning-input> <br />
+    <lightning-input  data-formfield="lastName"  type="text" label="Enter Last Name" name="lastName"> </lightning-input> <br />
+    <lightning-combobox
+            name="gender"
+            label="Select Gender"
+            value={gender}
+            placeholder="Select Gender"
+            options={options}
+            onchange={handleChange} ></lightning-combobox><br/>
+
+            <lightning-button  label="Submit" title="" onclick={submitRecord}></lightning-button>
+        </lightning-card>
+</template>
